@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  body {
+    @apply bg-light-1 text-black min-h-screen font-inter pt-16;
+  }
+}
+
+@layer utilities {
+  /* TYPOGRAPHY */
+  .h1-bold {
+    @apply text-[36px] font-bold leading-[140%] tracking-tighter;
+  }
+
+  .h1-semibold {
+    @apply text-[36px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .h2-bold {
+    @apply text-[30px] font-bold leading-[140%] tracking-tighter;
+  }
+
+  .h3-bold {
+    @apply text-[24px] font-bold leading-[140%] tracking-tighter;
+  }
+
+  .h4-bold {
+    @apply text-[22px] font-bold leading-[140%] tracking-tighter;
+  }
+
+  .base-semibold {
+    @apply text-[16px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .base-medium {
+    @apply text-[16px] font-medium leading-[140%];
+  }
+
+  .base-regular {
+    @apply text-[16px] font-normal leading-[140%];
+  }
+
+  .body-bold {
+    @apply text-[18px] font-bold leading-[140%];
+  }
+
+  .body-medium {
+    @apply text-[18px] font-medium leading-[140%];
+  }
+
+  .small-semibold {
+    @apply text-[14px] font-semibold leading-[140%] tracking-tighter;
+  }
+
+  .small-medium {
+    @apply text-[14px] font-medium leading-[140%];
+  }
+
+  .small-regular {
+    @apply text-[16px] font-normal leading-[140%];
+  }
+
+  .subtle-semibold {
+    @apply text-[12px] font-semibold leading-[140%];
+  }
+
+  .tiny-medium {
+    @apply text-[11px] font-medium leading-[140%];
+  }
+
+  /* UTILITIES */
+  .invert-white {
+    @apply invert brightness-0 transition;
+  }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .flex-start {
+    @apply flex justify-start items-center;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #09090a;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #5c5c7b;
+    border-radius: 50px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #7878a3;
+  }
+
+  .topbar {
+    @apply w-full py-4 px-8 justify-between top-0 z-50 h-20 fixed xl:px-52 flex bg-light-1 dark:bg-dark-4;
+  }
+  .home-container {
+    @apply flex flex-col flex-1 overflow-scroll pt-24 items-center lg:p-12 lg:pt-24 custom-scrollbar pb-20 lg:px-5
+  }
+  .home-inner_container {
+    @apply flex flex-col items-center w-full gap-8 lg:gap-16 justify-center
+  }
+  .general {
+    @apply pb-10
+  }
+  .greeting {
+    @apply flex flex-col flex-1 items-center h1-bold w-full pb-16 md:pb-36
+  }
+  .about {
+    @apply p-10 max-w-xs bg-violet-100 dark:bg-primary-600 rounded-md sm:max-w-xl text-black lg:max-w-2xl
+  }
+  .about h4 {
+    @apply pb-4
+  }
+  .about p {
+    @apply small-regular pb-6
+  }
+  .plusses {
+    @apply p-10 pb-4 mb-16 max-w-xs xs:max-w-sm bg-violet-100 dark:bg-primary-600 rounded-md justify-center items-center text-black lg:max-w-4xl text-center
+  }
+  .plusses ul {
+    @apply grid gap-12 md:grid-cols-2 xl:grid-cols-4 items-center justify-center
+  }
+  .plusses li {
+    @apply w-40
+  }
+  .plusses li {
+    transition: transform 0.6s;
+  }
+  .plusses li:hover {
+    @apply translate-y-2
+  }
+  .plusses img {
+    @apply w-24 max-w-none ml-8
+  }
+  .plusses p {
+    @apply small-regular py-4
+  }
+  .skills {
+    @apply items-center tiny-medium max-w-xs sm:max-w-none sm:subtle-semibold bg-violet-100 dark:bg-primary-600 rounded-md p-3 sm:p-10 justify-center text-black mb-16
+  }
+  .skills ul {
+    @apply grid grid-rows-4 grid-flow-col gap-3 sm:gap-8 pt-10 md:grid-rows-2 lg:gap-10 items-center text-center
+  }
+  .skills li {
+    transition: transform 0.6s;
+  }
+  .skills li:hover {
+    @apply rounded-md translate-y-3
+  }
+  .projects {
+    @apply grid text-black bg-violet-100 dark:bg-primary-600 rounded-md p-10 justify-center max-w-xs xs:max-w-none
+  }
+  .projects ul {
+    @apply grid grid-cols-1 lg:grid-cols-2 justify-center items-center text-center
+  }
+  .projects li {
+    transition: transform 0.6s;
+  }
+  .projects li:hover {
+    @apply rounded-md translate-y-3
+  }
+  .dark {
+    @apply bg-dark-4 text-light-1
+  }
+  .light {
+    @apply bg-light-1 text-black
+  }
+}
