@@ -21,8 +21,8 @@ const Home = () => {
         <img
           src={
             theme === "light"
-              ? "/public/assets/icons/moon.png"
-              : "/public/assets/icons/sun.png"
+              ? "/assets/icons/moon.png"
+              : "/assets/icons/sun.png"
           }
           alt="moon"
           className=" w-9 h-9"
@@ -45,28 +45,28 @@ const Home = () => {
             <div className="pt-10 items-center">
               <div className="flex justify-center p-2 rounded-full dark:bg-primary-600">
                 <img
-                  src="/public/assets/icons/github.png"
+                  src="/assets/icons/github.png"
                   alt="github"
                   className="mr-10 "
                   width={52}
                   height={52}
                 />
                 <img
-                  src="/public/assets/icons/whatsapp.png"
+                  src="/assets/icons/whatsapp.png"
                   alt="whatsapp"
                   className="mr-10"
                   width={52}
                   height={52}
                 />
                 <img
-                  src="/public/assets/icons/telegram.png"
+                  src="/assets/icons/telegram.png"
                   alt="telegram"
                   width={50}
                   height={50}
                 />
               </div>
               <img
-                src="/public/assets/icons/person.png"
+                src="/assets/icons/person.png"
                 alt=""
                 width={300}
                 height={300}
