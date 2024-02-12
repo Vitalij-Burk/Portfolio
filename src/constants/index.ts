@@ -83,22 +83,22 @@ export const skillLinks = [
 
 export const serviceLinks = [
   {
-    imgUrl: "/public/assets/icons/design.png",
+    imgUrl: "public/assets/icons/design.png",
     label: "Good Design",
     text: "You will get very beautiful design"
   },
   {
-    imgUrl: "/public/assets/icons/clock.png",
+    imgUrl: "public/assets/icons/clock.png",
     label: "Speed",
     text: "Your Website will be very fast"
   },
   {
-    imgUrl: "/public/assets/icons/support.png",
+    imgUrl: "public/assets/icons/support.png",
     label: "Support",
     text: "You will have my support"
   },
   {
-    imgUrl: "/public/assets/icons/price.png",
+    imgUrl: "public/assets/icons/price.png",
     label: "Best Price",
     text: "You will get the best price for your offer"
   },
@@ -106,25 +106,25 @@ export const serviceLinks = [
 
 export const projectLinks = [
   {
-    imgUrl: "public/assets/images/MovieLand.png",
+    imgUrl: "/public/assets/images/MovieLand.png",
     label: "MovieLand",
     text: "Search films",
     link: "https://movie-land-weld-theta.vercel.app/",
   },
   {
-    imgUrl: "public/assets/images/Desire.png",
+    imgUrl: "/public/assets/images/Desire.png",
     label: "Desire",
     text: "Search furniture",
     link: "https://desire-public.netlify.app/",
   },
   {
-    imgUrl: "public/assets/images/Vitagram.png",
+    imgUrl: "/public/assets/images/Vitagram.png",
     label: "Vitagram",
     text: "Create posts",
     link: "",
   },
   {
-    imgUrl: "public/assets/images/Employees.png",
+    imgUrl: "/public/assets/images/Employees.png",
     label: "Employees",
     text: "Create employees",
     link: "",
